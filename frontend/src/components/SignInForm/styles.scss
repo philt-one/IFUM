@@ -1,0 +1,168 @@
+
+
+.signin-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.signin-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signin-input {
+    margin-bottom: 20px;
+    width: 297px;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    border: 0 none;
+    height: 42px;
+    margin-right: 0;
+    color: rgb(212, 211, 211);
+    outline: none;
+    background: #00000000;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.45s;
+    border-bottom: rgba(255, 255, 255, 0.096) solid 1px;
+    &:focus {
+        // background-color: #252525a2;
+        border-bottom: #5B4FF4 solid 1px;
+
+    }
+}
+
+.signin-form {
+    width: 297px;
+    margin: 4px;
+    background-color: #00000000;
+}
+
+.continue-button {
+    width: 297px;
+    height: 40px;
+    background-color: rgba(34, 31, 37, 0.534);
+    border-radius: 8px;
+    border: 0px;
+    font-size: 14px;
+    color: rgba(122, 122, 122, 0.267);
+    margin-bottom: 20px;
+}
+
+@keyframes fadeout {
+    0% {
+        background-color: #5B4FF4;
+    }
+    100% {
+        background-color: rgba(34, 31, 37, 0.534);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        background-color: rgba(34, 31, 37, 0.534);
+    }
+    100% {
+        background-color: #5B4FF4;
+    }
+}
+
+.isNotPopulated {
+    animation: fadeout 200ms;
+    background-color: rgba(34, 31, 37, 0.534);
+    color: rgba(122, 122, 122, 0.267);
+
+}
+
+.isPopulated {
+    animation: fadein 200ms;
+    background-color: #5B4FF4;
+    color: rgb(255, 255, 255);
+}
+
+
+// ____Continue button animation
+//
+.continue-anim-enter {
+    width: 297px;
+    height: 40px;
+    background-color: rgba(34, 31, 37, 0.534);
+    border-radius: 8px;
+    border: 0px;
+    color: rgba(122, 122, 122, 0.267);
+    font-size: 14px;
+}
+
+.continue-anim-enter-active {
+    background-color: #5B4FF4;
+    transition: background-color 1000ms;
+}
+
+.continue-anim-exit {
+    width: 297px;
+    height: 40px;
+    background-color: #5B4FF4;
+    border-radius: 8px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.continue-anim-exit-active {
+    background-color: rgba(34, 31, 37, 0.534);
+    transition: background-color 1000ms;
+}
+
+.svg-icon {
+    height: 60px;
+    width: 60px;
+    fill: #5B4FF4;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+.nb-spinner {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    background: transparent;
+    border-top: 4px solid #5B4FF4;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    -webkit-animation: 1s spin linear infinite;
+    animation: 1s spin linear infinite;
+    display: block;
+    margin: auto;
+}
+    
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+          
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    padding-bottom: 60px;
+}
