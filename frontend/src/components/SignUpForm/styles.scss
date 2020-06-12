@@ -1,5 +1,3 @@
-
-
 .signin-card {
     position: absolute;
     top: 50%;
@@ -16,7 +14,7 @@
 
 .signin-input {
     margin-bottom: 20px;
-    width: 297px;
+    width: 100%;
     padding: 15px 20px 15px 20px;
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
@@ -32,19 +30,19 @@
     border-bottom: rgba(255, 255, 255, 0.096) solid 1px;
     &:focus {
         // background-color: #252525a2;
-        border-bottom: #5B4FF4 solid 1px;
+        border-bottom: #EB0D50 solid 1px;
 
     }
 }
 
 .signin-form {
-    width: 297px;
-    margin: 4px;
+    max-width: 297px;
+    padding: 0px 30px;
     background-color: #00000000;
 }
 
 .continue-button {
-    width: 297px;
+    width: 100%;
     height: 40px;
     background-color: rgba(34, 31, 37, 0.534);
     border-radius: 8px;
@@ -56,7 +54,7 @@
 
 @keyframes fadeout {
     0% {
-        background-color: #5B4FF4;
+        background-color: #EB0D50;
     }
     100% {
         background-color: rgba(34, 31, 37, 0.534);
@@ -68,7 +66,7 @@
         background-color: rgba(34, 31, 37, 0.534);
     }
     100% {
-        background-color: #5B4FF4;
+        background-color: #EB0D50;
     }
 }
 
@@ -81,7 +79,7 @@
 
 .isPopulated {
     animation: fadein 200ms;
-    background-color: #5B4FF4;
+    background-color: #EB0D50;
     color: rgb(255, 255, 255);
 }
 
@@ -99,14 +97,14 @@
 }
 
 .continue-anim-enter-active {
-    background-color: #5B4FF4;
+    background-color: #EB0D50;
     transition: background-color 1000ms;
 }
 
 .continue-anim-exit {
     width: 297px;
     height: 40px;
-    background-color: #5B4FF4;
+    background-color: #EB0D50;
     border-radius: 8px;
     border: 0px;
     color: rgb(255, 255, 255);
@@ -117,13 +115,16 @@
     transition: background-color 1000ms;
 }
 
-.svg-icon {
-    height: 60px;
-    width: 60px;
-    fill: #5B4FF4;
+.half-image {
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: 240px;
+    object-fit: cover;
+    left: 50vw;
+    transform: translate(-50%, -40%);
     display: block;
     margin: auto;
-    padding-bottom: 20px;
 }
 
 
@@ -132,7 +133,7 @@
     height: 75px;
     margin: 0;
     background: transparent;
-    border-top: 4px solid #5B4FF4;
+    border-top: 4px solid #EB0D50;
     border-right: 4px solid transparent;
     border-radius: 50%;
     -webkit-animation: 1s spin linear infinite;
@@ -165,4 +166,5 @@
 
 .loading-text {
     padding-bottom: 60px;
+    text-align: center;
 }

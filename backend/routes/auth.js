@@ -37,6 +37,6 @@ authRouter.post("/login", (req, res, next) => {
             return res.send({ user: user.withoutPassword(), token })
         });
     });
-})
+});
 
 module.exports = authRouter;

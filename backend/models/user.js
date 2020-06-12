@@ -16,7 +16,16 @@ const userSchema = new Schema({
     isAdmin: {
         type: Boolean,
         default: false
+    },
+    refreshToken: {
+        type: String,
+        default: ""
+    },
+    accessToken: {
+        type: String,
+        default: ""
     }
+    
 });
 
 userSchema.pre("save", function (next) {
@@ -39,6 +48,8 @@ userSchema.methods.checkPassword = function (passwordAttempt, callback) {
 userSchema.methods.withoutPassword = function () {
     const user = this.toObject();
     delete user.password;
+    delete user.refreshToken;
+    delete user.accessToken;
     return user;
 };
 

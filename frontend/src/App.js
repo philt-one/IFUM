@@ -5,6 +5,7 @@ import Home from './routes/Home';
 import Protected from './routes/Protected';
 import ProtectedRoute from './components/ProtectedRoute';
 import UnprotectedRoute from './components/UnprotectedRoute';
+import Callback from './routes/Callback'
 
 import {
 	Switch,
@@ -20,6 +21,7 @@ function App() {
 			<UnprotectedRoute path="/signin" component={SignInForm} />
 			<UnprotectedRoute path="/signup" component={SignUpForm} />
 			<ProtectedRoute path="/protected" component={Protected} />
+			<ProtectedRoute path="/spotify/callback" component={Callback} />
 		</Switch>
 	);
 }

@@ -1,0 +1,38 @@
+.home-logo {
+    max-width: 400px;
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.home-row {
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: #EB0D50 solid 4px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+.spotify-button {
+    color: rgb(0, 0, 0);
+    background-color: #0DD65A;
+    border: rgb(0, 0, 0) solid 4px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+}
+.spotify-row {
+    display: flex;
+    justify-content: center;
+}
