@@ -1,6 +1,6 @@
 # IFUM | I Finally Understand Music
 
-Statistical analysis for spotify data
+Statistical analysis dashboard for spotify
 
 ## Built With
 

@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.scss';
 import { motion } from "framer-motion"
-import AuthContext from '../../contexts/AuthContext';
-
+import { login } from "../../helper/auth";
 
 const SignInForm = (props) => {
     const [ username, setUsername ] = useState("");
@@ -10,8 +9,6 @@ const SignInForm = (props) => {
     const [ populatedCreds, setPopulatedCreds ] = useState(null);
     const [ isLoading, setIsLoading ] = useState(false);
     const [ errorMessage, setErrorMessage ] = useState("");
-
-    const { login } = useContext(AuthContext);
 
     const handleOnSubmit = (event) => {
         event.preventDefault()
@@ -52,16 +49,16 @@ const SignInForm = (props) => {
                 { !isLoading ? (
                     <div>
                         <div className="row">
-                            <div className="signin-title mx-auto">Sign In to IFUM</div>
+                            <div className="signin-card__title mx-auto">Sign In to IFUM</div>
                         </div>
                         <div className="row">
-                            <form className="signin-form mx-auto" onSubmit={handleOnSubmit} >
+                            <form className="signin-card__form mx-auto" onSubmit={handleOnSubmit} >
                                 <div className="row">
                                     <input 
                                         type="text"
                                         name="username"
                                         placeholder="Username"
-                                        className="signin-input"
+                                        className="signin-card__input"
                                         autoComplete="off"
                                         onChange={handleOnChangeUsername}
                                     />
@@ -69,7 +66,7 @@ const SignInForm = (props) => {
                                         type="password"
                                         name="password"
                                         placeholder="Password"
-                                        className="signin-input"
+                                        className="signin-card__input"
                                         autoComplete="off"
                                         onChange={handleOnChangePassword}
                                     />

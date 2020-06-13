@@ -1,10 +1,10 @@
-import React, { useContext, Fragment } from 'react';
-import AuthContext from '../../contexts/AuthContext';
+import React, { Fragment } from 'react';
 import axios from "axios";
+import { logout } from "../../helper/auth";
+
 
 const Protected = (props) => {
 
-    const { logout } = useContext(AuthContext);
     
     const spotifyAxios = axios.create();
     spotifyAxios.interceptors.request.use((config)=>{

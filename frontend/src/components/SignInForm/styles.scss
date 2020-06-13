@@ -5,34 +5,42 @@
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
     color: white;
-}
 
-.signin-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.signin-input {
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 15px 20px 15px 20px;
-    font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
-    border: 0 none;
-    height: 42px;
-    margin-right: 0;
-    color: rgb(212, 211, 211);
-    outline: none;
-    background: #00000000;
-    float: left;
-    box-sizing: border-box;
-    transition: all 0.45s;
-    border-bottom: rgba(255, 255, 255, 0.096) solid 1px;
-    &:focus {
-        // background-color: #252525a2;
-        border-bottom: #EB0D50 solid 1px;
-
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
     }
+
+
+    &__input {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 15px 20px 15px 20px;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        border: 0 none;
+        height: 42px;
+        margin-right: 0;
+        color: rgb(212, 211, 211);
+        outline: none;
+        background: #00000000;
+        float: left;
+        box-sizing: border-box;
+        transition: all 0.45s;
+        border-bottom: rgba(255, 255, 255, 0.096) solid 1px;
+        &:focus {
+            // background-color: #252525a2;
+            border-bottom: #EB0D50 solid 1px;
+    
+        }
+    }
+
+    &__form {
+        max-width: 297px;
+        padding: 0px 30px;
+        background-color: #00000000;
+    }
+
 }
 
 .signin-form {

@@ -1,8 +1,8 @@
-const User = require("./models/user");
+const User = require("../models/user");
 const request = require("request");
 
 
-const refreshAccessToken = (req) => {
+export const refreshAccessToken = (req) => {
     User.findOne({ _id: req.user._id }, (error, user) => {
         if (error) throw new Error(error);
         const refreshOptions = {

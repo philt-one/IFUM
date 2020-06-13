@@ -24,27 +24,6 @@ spotifyRouter.get("/get-user-tracks", (req, res, next) => {
             offset: 0
         })
         .then(function(data) {
-            // const total = data.body.total;
-            // let totalUserTracks = [data.body];
-            // const promises = [];
-            // let index = 49;
-            // while (index < total) {
-            //     promises.push(
-            //         spotifyApi.getMySavedTracks({
-            //             limit : 50,
-            //             offset: index
-            //         }).then((data) => {
-            //             totalUserTracks.push(data.body);
-            //         }));
-            //     index = index + 50;
-            // }
-            // Promise.all(promises).then(function(){
-            //     console.log(totalUserTracks.length);
-            //     res.send(totalUserTracks);
-            // }).catch(error => {
-            //     console.error(error)
-            //     res.send(error);
-            //   });
             res.send(data.body);
         }, function(err) {
             res.send(err);
@@ -178,18 +157,6 @@ spotifyRouter.post("/auth-callback", function (req, res, next) {
                         {upsert: true},
                         (err, user) => {
                                 if (err) return res.send(500, {error: err});
-                    });
-                    const options = {
-                        url: "https://api.spotify.com/v1/me",
-                        headers: {
-                            Authorization: "Bearer " + access_token
-                        },
-                        json: true
-                    };
-
-                    // use the access token to access the Spotify Web API
-                    request.get(options, function (error, response, body) {
-                        console.log(body);
                     });
 
                     // we can also pass the token to the browser to make requests from there
