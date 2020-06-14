@@ -4,7 +4,7 @@ Statistical analysis dashboard for spotify. The goal of this project is to retre
 
 
 ### Topics learned so far in this project
-* Authentication techniques (OAuth2.0, JWT)
+* Authentication & authorization techniques (OAuth2.0, JWT)
 * Control CSS animation using states
 * Getting more familiar with MongoDB
 
