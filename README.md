@@ -4,7 +4,7 @@ Statistical analysis dashboard for spotify. The goal of this project is to retre
 
  
 ## Built With
-a
+
 * [create-react-app](https://github.com/facebook/create-react-app) - Toolkit to setup ReactJS
 
 
