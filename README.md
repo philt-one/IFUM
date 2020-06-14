@@ -3,7 +3,7 @@
 Statistical analysis dashboard for spotify. The goal of this project is to retreive features like BPM, key and valence from songs saved on your Spotify account. Visualizing this data could give a lot of insights into your music preferences.
 
 
-### Things learn while building this project
+### Topics learned so far in this project
 * Authentication techniques (OAuth2.0, JWT)
 * Control CSS animation using states
 * Getting more familiar with MongoDB
